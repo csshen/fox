@@ -16,8 +16,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import 'mapbox-gl/dist/mapbox-gl.css';
-
-var root = 'https://2762fb77.ngrok.io';
+import logo from './logo.png'
+var root = 'https://745774b0.ngrok.io';
 
 
 
@@ -86,7 +86,7 @@ export default class Login extends React.Component {
       <br/>
       <Grid container spacing={3}>
         <Grid item xs={12}>
-          <Typography align='center' component="h1" variant="h1">FöX</Typography>
+          <img  src={logo}/>
           { this.state.text}
         </Grid>
         <Grid item xs={0} md={3}/>
