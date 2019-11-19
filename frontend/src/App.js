@@ -85,7 +85,12 @@ export default class Login extends React.Component {
     let homepage = (<Container component="main">
       <br/>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+
+        <Grid container
+  spacing={0}
+  direction="column"
+  alignItems="center"
+  justify="center" item xs={12}>
           <img  src={logo}/>
           { this.state.text}
         </Grid>
