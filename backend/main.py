@@ -1,6 +1,8 @@
 import requests
 #from relay import *
 
+
+
 while True:
     print('Please Input Code')
     code = input()
@@ -8,7 +10,6 @@ while True:
     r = requests.post(url='https://2762fb77.ngrok.io/get_locker', json={'code': int(code)})
 
     locker = r.json()['locker']
-
     if locker == 1:
         pin = 17
         #relay.motor_off(pin)
